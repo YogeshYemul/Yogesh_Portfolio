@@ -4,8 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
-import CodingProfiles from "@/components/CodingProfiles";
-import Contact from "@/components/Contact";
+import LetsConnect from "@/components/LetsConnect";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,8 +16,7 @@ const Index = () => {
       <Skills />
       <Projects />
       <Education />
-      <CodingProfiles />
-      <Contact />
+      <LetsConnect />
       <Footer />
     </div>
   );

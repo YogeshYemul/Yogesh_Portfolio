@@ -5,8 +5,6 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 const roles = [
   "Full Stack Developer",
   "Computer Engineering Student",
-  "AI/ML Enthusiast",
-  "Problem Solver",
 ];
 
 const Hero = () => {
@@ -53,21 +51,13 @@ const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto relative z-10 text-center px-4">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="font-mono text-sm text-primary mb-6 tracking-widest uppercase"
-        >
-          {'<Hello World />'}
-        </motion.p>
+      <div className="container mx-auto relative z-10 text-center px-4 py-8 md:py-0">
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold mb-4 glow-yellow"
+          transition={{ delay: 0.2 }}
+          className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold mb-3 md:mb-4 glow-yellow leading-tight"
         >
           Yogesh <span className="text-primary">Yemul</span>
         </motion.h1>
@@ -75,39 +65,31 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="h-10 mb-6"
+          transition={{ delay: 0.4 }}
+          className="h-8 md:h-10 mb-4 md:mb-6"
         >
-          <span className="font-body text-lg sm:text-xl md:text-2xl text-muted-foreground">
+          <span className="font-body text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground">
             {text}
             <span className="text-primary animate-pulse-glow">|</span>
           </span>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="font-mono text-sm text-muted-foreground mb-10 tracking-wider"
-        >
-          Code. Train. Deploy. Repeat.
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          transition={{ delay: 0.8 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-12 flex-wrap px-2"
         >
           <a
-            href="#projects"
-            className="px-8 py-3 bg-primary text-primary-foreground font-body font-semibold rounded-lg hover:bg-accent transition-colors"
+            href="/resume.pdf"
+            download
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-yellow-500 text-black font-body font-semibold rounded-lg hover:bg-yellow-600 transition-colors text-sm sm:text-base"
           >
-            View Projects
+            Download Resume
           </a>
           <a
-            href="#contact"
-            className="px-8 py-3 border border-primary text-primary font-body font-semibold rounded-lg hover:bg-primary/10 transition-colors"
+            href="#connect"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-primary text-primary font-body font-semibold rounded-lg hover:bg-primary/10 transition-colors text-sm sm:text-base"
           >
             Get In Touch
           </a>
@@ -116,7 +98,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
+          transition={{ delay: 1 }}
           className="flex items-center justify-center gap-6 mb-16"
         >
           {[
@@ -140,7 +122,7 @@ const Hero = () => {
           href="#about"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.4 }}
+          transition={{ delay: 1.2 }}
           className="inline-block animate-bounce-slow text-muted-foreground hover:text-primary transition-colors"
           aria-label="Scroll down"
         >

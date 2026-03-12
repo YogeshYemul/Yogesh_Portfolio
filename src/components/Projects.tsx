@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
@@ -43,15 +42,15 @@ const Projects = () => {
   const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 md:py-32" ref={ref}>
+    <section id="projects" className="py-12 md:py-20 lg:py-32" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-sm text-primary mb-2 tracking-widest uppercase">My Work</p>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-8">
+          <p className="font-mono text-xs md:text-sm text-primary mb-2 tracking-widest uppercase">My Work</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 md:mb-8">
             Featured <span className="text-primary">Projects</span>
           </h2>
         </motion.div>
@@ -99,30 +98,12 @@ const Projects = () => {
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-5 flex-1">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-5">
+              <div className="flex flex-wrap gap-2">
                 {project.tech.map((t) => (
                   <span key={t} className="px-3 py-1 text-xs font-mono bg-secondary text-muted-foreground rounded-full border border-border">
                     {t}
                   </span>
                 ))}
-              </div>
-              <div className="flex gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-body text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Github size={16} /> Code
-                </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-body text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <ExternalLink size={16} /> Live Demo
-                </a>
               </div>
             </motion.div>
           ))}

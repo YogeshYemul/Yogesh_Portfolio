@@ -46,9 +46,10 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#" className="font-heading text-xl font-bold text-primary">
-          YY<span className="text-foreground">.</span>
+      <div className="container mx-auto flex items-center justify-between py-3 md:py-4 px-4">
+        <a href="#" className="font-heading text-xl md:text-2xl font-bold flex items-center gap-1 md:gap-2">
+          <span className="text-yellow-400 text-lg md:text-2xl">✨</span>
+          <span className="text-white">YY</span>
         </a>
 
         {/* Desktop */}
