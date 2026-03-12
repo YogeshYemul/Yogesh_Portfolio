@@ -81,9 +81,9 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-12 flex-wrap px-2"
         >
           <a
-            href="/resume.pdf"
-            download
-            className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-yellow-500 text-black font-body font-semibold rounded-lg hover:bg-yellow-600 transition-colors text-sm sm:text-base"
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-yellow-500 text-black font-body font-semibold rounded-lg hover:bg-yellow-600 transition-colors text-sm sm:text-base cursor-not-allowed"
           >
             Download Resume
           </a>
