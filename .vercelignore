@@ -12,9 +12,7 @@ build/
 src/
 public/*.map
 
-# Testing
-coverage/
-.nyc_output/
+# Testing (removed)
 
 # IDE
 .vscode/
@@ -35,8 +33,6 @@ coverage/
 
 # Documentation & Config
 README.md
-playwright.config.ts
-vitest.config.ts
 tailwind.config.ts
 tsconfig.*.json
 vite.config.ts
@@ -46,4 +42,3 @@ components.json
 bun.lock
 bun.lockb
 package-lock.json
-playwright-fixture.ts
