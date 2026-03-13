@@ -30,7 +30,7 @@ const profiles = [
   {
     name: "WhatsApp",
     icon: MessageCircle,
-    url: "https://wa.me/917018226820",
+    url: "https://wa.me/919561727951",
     color: "hover:from-yellow-400 hover:to-yellow-500",
   },
 ];
