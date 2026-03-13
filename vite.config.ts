@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => ({
     target: "ES2020",
     reportCompressedSize: false,
     rollupOptions: {
+      input: path.resolve(__dirname, 'index.html'),
       output: {
         manualChunks: {
           radix: ["@radix-ui/react-accordion", "@radix-ui/react-alert-dialog", "@radix-ui/react-avatar"],
